@@ -1,0 +1,17 @@
+<mat-grid-list cols="4" rowHeight="1:1">
+    @for (showcase of showcases; track showcase) {
+        <mat-grid-tile>
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{showcase.name}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>{{showcase.description}}</p>
+                </mat-card-content>
+                <mat-card-footer class="card-footer">
+                    <button mat-button [routerLink]="showcase.route">Перейти</button>
+                </mat-card-footer>
+            </mat-card>
+        </mat-grid-tile>
+    }
+</mat-grid-list>
