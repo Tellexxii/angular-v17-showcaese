@@ -1,0 +1,8 @@
+<h2>Timed defer</h2>
+
+<p>До отрисовки осталось: {{timer$ | async}}</p>
+
+@defer (on timer(5000)) {
+    <app-heavy-component></app-heavy-component>
+}
+

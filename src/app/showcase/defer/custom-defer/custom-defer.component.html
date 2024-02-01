@@ -1,0 +1,10 @@
+<h2>Custom defer</h2>
+
+<button mat-button (click)="trigger$.set(true)">Trigger</button>
+
+@defer(when trigger$()) {
+    <app-heavy-component></app-heavy-component>
+} @error {
+    <p>Error, try again</p>
+    <button mat-button (click)="trigger$.set(false)">Trigger false</button>
+}
