@@ -18,6 +18,11 @@ export const SHOWCASE_PROVIDER_TOKEN = new InjectionToken<Showcase[]>('', {
                 name: '@defer when',
                 description: 'Defer по кастомному условию',
                 route: 'custom-defer'
+            },
+            {
+                name: 'TODO',
+                description: 'TODO',
+                route: 'todo'
             }
         ]
     }
