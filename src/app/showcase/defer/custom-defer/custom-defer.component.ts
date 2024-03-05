@@ -17,5 +17,6 @@ import {MatButton} from "@angular/material/button";
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CustomDeferComponent {
-    trigger$ = signal(false)
+    whenTrigger$ = signal(false)
+    prefetchTrigger$ = signal(false)
 }
